@@ -1,0 +1,809 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOke4y+r4NcsElanlkGjIjx",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/ovillalobos698-cpu/ptn/blob/main/23feb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "QRaFaaIx1Jvi"
+      },
+      "outputs": [],
+      "source": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "r=[1,2,3,4]\n",
+        "for n in r:\n",
+        "  print(\"hola\")\n",
+        ""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "G4U1sKbp1K7_",
+        "outputId": "3dc45f0a-a76d-453c-f3e1-b02ce6b35e48"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "hola\n",
+            "hola\n",
+            "hola\n",
+            "hola\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "r=[1,2,3,4]\n",
+        "for n in r:\n",
+        "  print(n)\n",
+        "  print(n*2)\n",
+        "  print()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Y-eNRUlo1SRt",
+        "outputId": "a768ca38-3d15-4166-f78d-7d7be78db07f"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "\n",
+            "2\n",
+            "4\n",
+            "\n",
+            "3\n",
+            "6\n",
+            "\n",
+            "4\n",
+            "8\n",
+            "\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from numpy import array\n",
+        "a=array([8,7,6,5,4,3,2,1],int)\n",
+        "for n in a:\n",
+        "  print(n)\n",
+        "  print(n*2)\n",
+        "  print()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1nRuJFrb16Mj",
+        "outputId": "6ba079bb-1759-4bdc-e7f3-45a2c5d9ad29"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "8\n",
+            "16\n",
+            "\n",
+            "7\n",
+            "14\n",
+            "\n",
+            "6\n",
+            "12\n",
+            "\n",
+            "5\n",
+            "10\n",
+            "\n",
+            "4\n",
+            "8\n",
+            "\n",
+            "3\n",
+            "6\n",
+            "\n",
+            "2\n",
+            "4\n",
+            "\n",
+            "1\n",
+            "2\n",
+            "\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from numpy import array\n",
+        "a=array([[8,7,6,5,4,3,2,1],[1,2,3,4,5,6,7,8]],int)\n",
+        "print(a)\n",
+        "print()\n",
+        "for n in a:\n",
+        "  print(n)\n",
+        "  print(n*2)\n",
+        "  print()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9LmrHwWJ2hsC",
+        "outputId": "d66ba97c-49dd-448b-816f-992e370317a8"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[8 7 6 5 4 3 2 1]\n",
+            " [1 2 3 4 5 6 7 8]]\n",
+            "\n",
+            "[8 7 6 5 4 3 2 1]\n",
+            "[16 14 12 10  8  6  4  2]\n",
+            "\n",
+            "[1 2 3 4 5 6 7 8]\n",
+            "[ 2  4  6  8 10 12 14 16]\n",
+            "\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from numpy import array\n",
+        "a=array([1,2,3,4,5,6,7,8],int)\n",
+        "b=0\n",
+        "\n",
+        "for n in a:\n",
+        "  b= n+1\n",
+        "  if b== 7:\n",
+        "    break\n",
+        "  print(b)\n",
+        "print()\n",
+        "print(\"Fin del ciclo.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RtwDPZkw21qa",
+        "outputId": "928a7531-e69c-45c8-9b79-bab101671094"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "\n",
+            "fin del ciclo\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from numpy import array\n",
+        "a=array([1,2,3,4,5,6,7,8],int)\n",
+        "b=0\n",
+        "\n",
+        "for n in a:\n",
+        "  b= n+1\n",
+        "  if b== 7:\n",
+        "    continue\n",
+        "  print(b)\n",
+        "print()\n",
+        "print(\"Fin del ciclo.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "i7EuU5kT3w7h",
+        "outputId": "49b0d42b-c6f9-4bdc-b51a-4ced835cd4b9"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "8\n",
+            "9\n",
+            "\n",
+            "Fin del ciclo.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "r=range(17)\n",
+        "print(list(r))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "y2P2pikj4BtX",
+        "outputId": "cf410be3-9d47-48bc-d913-cff55f5cea73"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "r=range(5)\n",
+        "for n in r:\n",
+        "  print(\"hola\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EzYJjCFh4ho-",
+        "outputId": "88cd5064-fd77-4794-c849-158c19434469"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "hola\n",
+            "hola\n",
+            "hola\n",
+            "hola\n",
+            "hola\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "r=range(5)\n",
+        "for n in r:\n",
+        "  print(n)\n",
+        "  print(3*n)\n",
+        "print()\n",
+        "print(\"Fin del ciclo.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "N3T-qbTZ5Oe1",
+        "outputId": "3c234f23-ad3b-4999-a625-f67cf60b6daf"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "0\n",
+            "1\n",
+            "3\n",
+            "2\n",
+            "6\n",
+            "3\n",
+            "9\n",
+            "4\n",
+            "12\n",
+            "\n",
+            "Fin del ciclo.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(list(range(2,25,3)))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "a33FiZ5d5dv0",
+        "outputId": "6a880863-9329-46ea-f590-77ab3bc61e33"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[2, 5, 8, 11, 14, 17, 20, 23]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(list(range(34,2,-2)))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "S5NUvtWh6CjU",
+        "outputId": "0f926ecc-7a37-4d4b-d6bc-64eeb9242bf9"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[34, 32, 30, 28, 26, 24, 22, 20, 18, 16, 14, 12, 10, 8, 6, 4]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a= 10/2\n",
+        "print(list(range(a)))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 159
+        },
+        "id": "z_ZYEboB6Uoj",
+        "outputId": "f8092724-58ef-47d5-99a4-e7bb97262f68"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "TypeError",
+          "evalue": "'float' object cannot be interpreted as an integer",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipython-input-3169714694.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0ma\u001b[0m\u001b[0;34m=\u001b[0m \u001b[0;36m10\u001b[0m\u001b[0;34m/\u001b[0m\u001b[0;36m2\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 2\u001b[0;31m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mlist\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mrange\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0ma\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m: 'float' object cannot be interpreted as an integer"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from numpy import arange\n",
+        "a = arange(5.2,19.6,.2)\n",
+        "print(a)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "g9VGEhGu6j8T",
+        "outputId": "1b8dd6d2-1f5d-43d8-f671-b5681729b0b7"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[ 5.2  5.4  5.6  5.8  6.   6.2  6.4  6.6  6.8  7.   7.2  7.4  7.6  7.8\n",
+            "  8.   8.2  8.4  8.6  8.8  9.   9.2  9.4  9.6  9.8 10.  10.2 10.4 10.6\n",
+            " 10.8 11.  11.2 11.4 11.6 11.8 12.  12.2 12.4 12.6 12.8 13.  13.2 13.4\n",
+            " 13.6 13.8 14.  14.2 14.4 14.6 14.8 15.  15.2 15.4 15.6 15.8 16.  16.2\n",
+            " 16.4 16.6 16.8 17.  17.2 17.4 17.6 17.8 18.  18.2 18.4 18.6 18.8 19.\n",
+            " 19.2 19.4]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from numpy import arange\n",
+        "a = arange(25.1,-6.1,-1.3)\n",
+        "print(a)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "I_Hc_bCg7FeC",
+        "outputId": "d04faaad-27d4-4884-947f-17e787536c1b"
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[25.1 23.8 22.5 21.2 19.9 18.6 17.3 16.  14.7 13.4 12.1 10.8  9.5  8.2\n",
+            "  6.9  5.6  4.3  3.   1.7  0.4 -0.9 -2.2 -3.5 -4.8]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from numpy import linspace\n",
+        "a = linspace(1,10,10)\n",
+        "print(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1fF7_veE77Qb",
+        "outputId": "f111addd-2e91-47ac-ace3-6805ecf1b02e"
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[ 1.  2.  3.  4.  5.  6.  7.  8.  9. 10.]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from numpy import linspace\n",
+        "a = linspace(0,10,5)\n",
+        "print(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2ZneLFHP8O0w",
+        "outputId": "0b71e74c-6ef9-4b5e-d191-1373b746e990"
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[ 0.   2.5  5.   7.5 10. ]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for n in range(1,101):\n",
+        "  rec= 1/n\n",
+        "  print(\"1/\", n, \"=\", rec, sep =\"\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mdVLJvRd8Uto",
+        "outputId": "5664265a-ed1f-42bb-af87-72dc1079bb32"
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1/1=1.0\n",
+            "1/2=0.5\n",
+            "1/3=0.3333333333333333\n",
+            "1/4=0.25\n",
+            "1/5=0.2\n",
+            "1/6=0.16666666666666666\n",
+            "1/7=0.14285714285714285\n",
+            "1/8=0.125\n",
+            "1/9=0.1111111111111111\n",
+            "1/10=0.1\n",
+            "1/11=0.09090909090909091\n",
+            "1/12=0.08333333333333333\n",
+            "1/13=0.07692307692307693\n",
+            "1/14=0.07142857142857142\n",
+            "1/15=0.06666666666666667\n",
+            "1/16=0.0625\n",
+            "1/17=0.058823529411764705\n",
+            "1/18=0.05555555555555555\n",
+            "1/19=0.05263157894736842\n",
+            "1/20=0.05\n",
+            "1/21=0.047619047619047616\n",
+            "1/22=0.045454545454545456\n",
+            "1/23=0.043478260869565216\n",
+            "1/24=0.041666666666666664\n",
+            "1/25=0.04\n",
+            "1/26=0.038461538461538464\n",
+            "1/27=0.037037037037037035\n",
+            "1/28=0.03571428571428571\n",
+            "1/29=0.034482758620689655\n",
+            "1/30=0.03333333333333333\n",
+            "1/31=0.03225806451612903\n",
+            "1/32=0.03125\n",
+            "1/33=0.030303030303030304\n",
+            "1/34=0.029411764705882353\n",
+            "1/35=0.02857142857142857\n",
+            "1/36=0.027777777777777776\n",
+            "1/37=0.02702702702702703\n",
+            "1/38=0.02631578947368421\n",
+            "1/39=0.02564102564102564\n",
+            "1/40=0.025\n",
+            "1/41=0.024390243902439025\n",
+            "1/42=0.023809523809523808\n",
+            "1/43=0.023255813953488372\n",
+            "1/44=0.022727272727272728\n",
+            "1/45=0.022222222222222223\n",
+            "1/46=0.021739130434782608\n",
+            "1/47=0.02127659574468085\n",
+            "1/48=0.020833333333333332\n",
+            "1/49=0.02040816326530612\n",
+            "1/50=0.02\n",
+            "1/51=0.0196078431372549\n",
+            "1/52=0.019230769230769232\n",
+            "1/53=0.018867924528301886\n",
+            "1/54=0.018518518518518517\n",
+            "1/55=0.01818181818181818\n",
+            "1/56=0.017857142857142856\n",
+            "1/57=0.017543859649122806\n",
+            "1/58=0.017241379310344827\n",
+            "1/59=0.01694915254237288\n",
+            "1/60=0.016666666666666666\n",
+            "1/61=0.01639344262295082\n",
+            "1/62=0.016129032258064516\n",
+            "1/63=0.015873015873015872\n",
+            "1/64=0.015625\n",
+            "1/65=0.015384615384615385\n",
+            "1/66=0.015151515151515152\n",
+            "1/67=0.014925373134328358\n",
+            "1/68=0.014705882352941176\n",
+            "1/69=0.014492753623188406\n",
+            "1/70=0.014285714285714285\n",
+            "1/71=0.014084507042253521\n",
+            "1/72=0.013888888888888888\n",
+            "1/73=0.0136986301369863\n",
+            "1/74=0.013513513513513514\n",
+            "1/75=0.013333333333333334\n",
+            "1/76=0.013157894736842105\n",
+            "1/77=0.012987012987012988\n",
+            "1/78=0.01282051282051282\n",
+            "1/79=0.012658227848101266\n",
+            "1/80=0.0125\n",
+            "1/81=0.012345679012345678\n",
+            "1/82=0.012195121951219513\n",
+            "1/83=0.012048192771084338\n",
+            "1/84=0.011904761904761904\n",
+            "1/85=0.011764705882352941\n",
+            "1/86=0.011627906976744186\n",
+            "1/87=0.011494252873563218\n",
+            "1/88=0.011363636363636364\n",
+            "1/89=0.011235955056179775\n",
+            "1/90=0.011111111111111112\n",
+            "1/91=0.01098901098901099\n",
+            "1/92=0.010869565217391304\n",
+            "1/93=0.010752688172043012\n",
+            "1/94=0.010638297872340425\n",
+            "1/95=0.010526315789473684\n",
+            "1/96=0.010416666666666666\n",
+            "1/97=0.010309278350515464\n",
+            "1/98=0.01020408163265306\n",
+            "1/99=0.010101010101010102\n",
+            "1/100=0.01\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "l=[]\n",
+        "for n in range(1,101):\n",
+        "  rec= 1/n\n",
+        "  l.append(rec)\n",
+        "print(l)\n",
+        "print()\n",
+        "print(sum(l))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Hs67cDxI87Sf",
+        "outputId": "3f2c7e64-fc76-4c80-ad74-ea1b8d8007fc"
+      },
+      "execution_count": 39,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1.0, 0.5, 0.3333333333333333, 0.25, 0.2, 0.16666666666666666, 0.14285714285714285, 0.125, 0.1111111111111111, 0.1, 0.09090909090909091, 0.08333333333333333, 0.07692307692307693, 0.07142857142857142, 0.06666666666666667, 0.0625, 0.058823529411764705, 0.05555555555555555, 0.05263157894736842, 0.05, 0.047619047619047616, 0.045454545454545456, 0.043478260869565216, 0.041666666666666664, 0.04, 0.038461538461538464, 0.037037037037037035, 0.03571428571428571, 0.034482758620689655, 0.03333333333333333, 0.03225806451612903, 0.03125, 0.030303030303030304, 0.029411764705882353, 0.02857142857142857, 0.027777777777777776, 0.02702702702702703, 0.02631578947368421, 0.02564102564102564, 0.025, 0.024390243902439025, 0.023809523809523808, 0.023255813953488372, 0.022727272727272728, 0.022222222222222223, 0.021739130434782608, 0.02127659574468085, 0.020833333333333332, 0.02040816326530612, 0.02, 0.0196078431372549, 0.019230769230769232, 0.018867924528301886, 0.018518518518518517, 0.01818181818181818, 0.017857142857142856, 0.017543859649122806, 0.017241379310344827, 0.01694915254237288, 0.016666666666666666, 0.01639344262295082, 0.016129032258064516, 0.015873015873015872, 0.015625, 0.015384615384615385, 0.015151515151515152, 0.014925373134328358, 0.014705882352941176, 0.014492753623188406, 0.014285714285714285, 0.014084507042253521, 0.013888888888888888, 0.0136986301369863, 0.013513513513513514, 0.013333333333333334, 0.013157894736842105, 0.012987012987012988, 0.01282051282051282, 0.012658227848101266, 0.0125, 0.012345679012345678, 0.012195121951219513, 0.012048192771084338, 0.011904761904761904, 0.011764705882352941, 0.011627906976744186, 0.011494252873563218, 0.011363636363636364, 0.011235955056179775, 0.011111111111111112, 0.01098901098901099, 0.010869565217391304, 0.010752688172043012, 0.010638297872340425, 0.010526315789473684, 0.010416666666666666, 0.010309278350515464, 0.01020408163265306, 0.010101010101010102, 0.01]\n",
+            "\n",
+            "5.187377517639621\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "s=0\n",
+        "for n in range(1,101):\n",
+        "  rec= 1/n\n",
+        "  s+=rec\n",
+        "print(s)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TTMAk3hh-YlV",
+        "outputId": "08f5cc54-6933-41a7-8cec-489cf7d0fe70"
+      },
+      "execution_count": 43,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5.187377517639621\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "R= 1.09737e-2\n",
+        "for m in [1,2,3]:\n",
+        "  for N in [1,2,3,4,5]:\n",
+        "    n= m+N\n",
+        "    k= R*( 1/m**2 - 1/n**2)\n",
+        "    print(\"La longitud de onda desde m=\", m , \"hasta n=\", n, \"es\", k)\n",
+        "print()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XhxSvUnt_JZM",
+        "outputId": "0799f3ac-3447-4b88-94ad-7567222c93e4"
+      },
+      "execution_count": 52,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "La longitud de onda desde m= 1 hasta n= 2 es 0.008230274999999999\n",
+            "La longitud de onda desde m= 1 hasta n= 3 es 0.009754399999999998\n",
+            "La longitud de onda desde m= 1 hasta n= 4 es 0.01028784375\n",
+            "La longitud de onda desde m= 1 hasta n= 5 es 0.010534752\n",
+            "La longitud de onda desde m= 1 hasta n= 6 es 0.010668875\n",
+            "La longitud de onda desde m= 2 hasta n= 3 es 0.001524125\n",
+            "La longitud de onda desde m= 2 hasta n= 4 es 0.0020575687499999997\n",
+            "La longitud de onda desde m= 2 hasta n= 5 es 0.0023044769999999997\n",
+            "La longitud de onda desde m= 2 hasta n= 6 es 0.0024385999999999995\n",
+            "La longitud de onda desde m= 2 hasta n= 7 es 0.00251947193877551\n",
+            "La longitud de onda desde m= 3 hasta n= 4 es 0.0005334437499999999\n",
+            "La longitud de onda desde m= 3 hasta n= 5 es 0.0007803519999999998\n",
+            "La longitud de onda desde m= 3 hasta n= 6 es 0.0009144749999999999\n",
+            "La longitud de onda desde m= 3 hasta n= 7 es 0.00099534693877551\n",
+            "La longitud de onda desde m= 3 hasta n= 8 es 0.0010478359375\n",
+            "\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "l=[1,2,3,4]\n",
+        "print(l[0])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UgB4-UGQDx3V",
+        "outputId": "853b0632-9680-4346-cd44-a451a93bb462"
+      },
+      "execution_count": 47,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "VL_JjhqaFBZT"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
